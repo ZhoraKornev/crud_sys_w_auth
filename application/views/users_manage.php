@@ -99,8 +99,25 @@
     }
     function save()
     {
+
+        var user_name=document.forms["form"]["user_name"].value;
+        var user_password=document.forms["form"]["user_password"].value;
+        //Если поле user_name пустое выведем сообщение и предотвратим отправку формы
+        if (user_name.length==0){
+            /*document.getElementById("user_name").innerHTML="*данное поле обязательно для заполнения";*/
+            alert(' поле **login** обязательно для заполнения');
+            return false;
+        }
+        //Если поле user_password пустое выведем сообщение и предотвратим отправку формы
+        if (user_password.length < 3){
+            /*document.getElementById("user_password").innerHTML="*данное поле обязательно для заполнения";*/
+            alert(' поле **Пароль** обязательно для заполнения и должно иметь минимум 3 символа');
+            return false;
+        }
+
         // ajax adding data to database
         $.ajax({
+
             url : "<?php echo site_url('user_controller/update_details')?>",
             type: "POST",
             data: $('#form').serialize(),
@@ -157,26 +174,31 @@
                         <div class="form-group">
                             <label class="control-label col-md-3">login</label>
                             <div class="col-md-9">
-                                <input name="user_name" placeholder="user_name" class="form-control" type="text" pattern=".{3,}" required >
+                                <input name="user_name" placeholder="user_name" class="form-control" type="text" required>
+                                <small id="user_name_Help" class="form-text text-danger">Это поле ОБЯЗАТЕЛЬНО для заполенния.</small>
                             </div>
                         </div>
                         <div class="form-group">
-                            <label class="control-label col-md-3">Имя пользователя</label>
+                            <label class="control-label">Имя пользователя</label>
                             <div class="col-md-9">
-                                <input name="user_realname" placeholder="user_realname" class="form-control" type="text" pattern=".{3,}" required>
+                                <input name="user_realname" placeholder="user_realname" class="form-control form-control-label" type="text">
+                                <small id="user_realname_Help" class="form-text text-muted">Это поле не обязательно для заполенния</small>
                             </div>
                         </div>
                         <div class="form-group">
                             <label class="control-label col-md-3">Пароль</label>
                             <div class="col-md-9">
-                                <input name="user_password" placeholder="Пароль" class="form-control" type="text" required ="">
+                                <input name="user_password" placeholder="Пароль" class="form-control" type="text" required>
+                                <small id="user_password_Help" class="form-text text-danger">Это поле ОБЯЗАТЕЛЬНО для заполенния</small>
                             </div>
                         </div>
                         <div class="form-group">
-                            <label class="control-label col-md-3">Уровень доступа</label>
-                            <div class="col-md-9">
-                                <input name="user_access" placeholder="user_access" class="form-control" type="text" required ="">
-                            </div>
+                            <label class="control-label">Уровень доступа</label>
+                            <small id="user_access_Help" class="form-text text-muted">Выбери уровень доступа</small>
+                            <select class="form-control" name="user_access" placeholder="user_access"  >
+                                <option value="1"> Просмотр</option>
+                                <option value="2"> Редактирование</option>
+                            </select>
                         </div>
                     </div>
                 </form>
