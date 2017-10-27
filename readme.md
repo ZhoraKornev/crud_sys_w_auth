@@ -10,6 +10,8 @@ Simple CRUD system based on Codeigniter using Ajax,Bootstrap,Models and MySQL //
 - ведение журнала изменений и лога основных событий.
 - русский интерфейс управления//ведения лога на русском языке
 
+![screenshot of sample](http://forum.norma4.net.ua/photoplog/images/9110/1_new_manage_window.png)
+
 Коментарии в коде почти отсутсвуют 
 Ссылка на изображении ведёт на ютуб для видеопрезентации
 [![презентация](http://forum.norma4.net.ua/photoplog/images/9110/1_main.png)](https://youtu.be/tizmLVk7XZ0)
