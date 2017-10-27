@@ -14,7 +14,7 @@ Simple CRUD system based on Codeigniter using Ajax,Bootstrap,Models and MySQL //
 
 Коментарии в коде почти отсутсвуют 
 Ссылка на изображении ведёт на ютуб для видеопрезентации
-[![презентация](http://forum.norma4.net.ua/photoplog/images/9110/1_main.png)](https://youtu.be/tizmLVk7XZ0)
+[![презентация](http://forum.norma4.net.ua/photoplog/images/9110/1_main.png)](https://youtu.be/v0Up1ZfV0B0)
 
 
 
