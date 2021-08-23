@@ -1,5 +1,8 @@
-Simple CRUD system based on Codeigniter using Ajax,Bootstrap,Models and MySQL // Простая система учёта техники на базе Codeigniter с системой авторизации
-=============================
+#DEPRECATED and NON-ACTUAL
+## Let it be like my studying work
+
+#####Simple CRUD system based on Codeigniter using Ajax,Bootstrap,Models and MySQL // Простая система учёта техники на базе Codeigniter с системой авторизации
+
 
 Данная система учёта была написана для управления базой картриджей.
 Основные функции: 
