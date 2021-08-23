@@ -1,4 +1,5 @@
-#DEPRECATED and NON-ACTUAL
+DEPRECATED and NON-ACTUAL
+===
 ## Let it be like my studying work
 
 #####Simple CRUD system based on Codeigniter using Ajax,Bootstrap,Models and MySQL // Простая система учёта техники на базе Codeigniter с системой авторизации
